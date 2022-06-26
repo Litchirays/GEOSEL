@@ -1,0 +1,9 @@
+streamlit
+altair
+plotly
+pandas
+numpy
+datetime
+joblib
+sklearn
+streamlit_option_menu
