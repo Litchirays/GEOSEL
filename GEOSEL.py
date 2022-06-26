@@ -20,7 +20,7 @@ import math
 
 # Load Joblib for modelling in building classification system
 
-pipe_lrbow = joblib.load(open("Modelling Label Building Classification.pkl","rb"))
+pipe_lrbow = joblib.load(open("GEOSEL Model.pkl","rb"))
 
 # Define section
 
@@ -42,12 +42,12 @@ labelmeaningown = {0:"Residential",1:"Commercial"}
 def main():
 	
 	# GEOSEL website
-	imageweb ="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/2123321321.png"
+	imageweb ="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Web.png"
 	st.set_page_config(page_title='GEOSEL', page_icon = imageweb, layout = 'centered')
 
 	# Logo
 
-	image1="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Element%201.png"
+	image1="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Logo.png"
 	st.image(image1, width=705)
 
 	# Menu button
@@ -70,7 +70,7 @@ def main():
 		st.markdown(
         f"""<style>
 		.stApp {{
-			background: url("https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Background%20Main.png");
+			background: url("https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Background%20Main%201.png");
 			background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
@@ -120,12 +120,12 @@ def main():
 
 				if building_icon=='Residential':
 			
-					imageresident="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Element%202.png"
+					imageresident="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Residential.png"
 					st.image(imageresident, width=705)
 
 				if building_icon=='Commercial':
 			
-					imagecom="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Element%203.png"
+					imagecom="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Commercial.png"
 					st.image(imagecom, width=705)
 
 				st.subheader("Building type probability score :")
@@ -168,12 +168,12 @@ def main():
 
 				if building_icon=='Residential':
 			
-					imageresident="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Element%202.png"
+					imageresident="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Residential.png"
 					st.image(imageresident, width=705)
 
 				if building_icon=='Commercial':
 			
-					imagecom="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Element%203.png"
+					imagecom="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Commercial.png"
 					st.image(imagecom, width=705)
 
 				st.subheader("Building type probability score :")
@@ -198,13 +198,13 @@ def main():
 		st.markdown(
          f"""<style>
 		 .stApp {{
-            background: url("https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Background%20Main%202.png");
+            background: url("https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Background%20Main%202.png");
             background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
 		# Start
 
-		datasetimg1="https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/1.png"
+		datasetimg1=""
 		datasetimg2=""
 		datasetimg3=""
 		datasetimg4=""
@@ -215,7 +215,7 @@ def main():
 		datasetimg9=""
 		datasetimg10=""
 
-		st.image(datasetimg1, caption= 'Dataset CSV', width=705)
+		#st.image(datasetimg1, caption= 'Dataset CSV', width=705)
 
 	if selected == 'QGIS':
 		
@@ -224,7 +224,7 @@ def main():
 		st.markdown(
         f"""<style>
 		.stApp {{
-			background: url("https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Background%20Main%206.png");
+			background: url("https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Background%20Main%203.png");
 			background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
@@ -251,7 +251,7 @@ def main():
 		st.markdown(
         f"""<style>
 		.stApp {{
-			background: url("https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Background%20Main%203.png");
+			background: url("https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Background%20Main%204.png");
 			background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
@@ -278,7 +278,7 @@ def main():
 		st.markdown(
         f"""<style>
 		.stApp {{
-			background: url("https://raw.githubusercontent.com/Litchirays/Irman-FYP-Web-App/main/Images/Background%20Main%204.png");
+			background: url("https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Background%20Main%206.png");
 			background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
