@@ -120,7 +120,7 @@ def main():
 
 				if building_icon=='Residential':
 			
-					imageresident="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Residential.png"
+					imageresident="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/Element%20Non-Commercial.png"
 					st.image(imageresident, width=705)
 
 				if building_icon=='Commercial':
@@ -204,17 +204,38 @@ def main():
 		)
 		# Start
 
-		datasetimg1=""
-		datasetimg2=""
-		datasetimg3=""
-		datasetimg4=""
-		datasetimg5=""
-		datasetimg6=""
-		datasetimg7=""
-		datasetimg8=""
-		datasetimg9=""
-		datasetimg10=""
-
+		col1, col2, col3 = st.columns(3)
+		
+		with col1:
+			datasetimg1="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/1.png"
+			st.image(datasetimg1, caption= 'Raw Dataset', width=230)
+			datasetimg2="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/2.png"
+			st.image(datasetimg2, caption= 'Total raw tweets dataframe', width=230)
+			datasetimg3="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/3.png"
+			st.image(datasetimg3, caption= 'Geotagged dataset CSV', width=230)
+			
+		
+		with col2:
+			datasetimg4="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/9.png"
+			st.image(datasetimg4, caption= 'Balanced dataset to 2077', width=230)
+			datasetimg5="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/8.png"
+			st.image(datasetimg5, caption= 'Top word of non-commercial area', width=230)
+			datasetimg6="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/6.png"
+			st.image(datasetimg6, caption= 'Top word of commercial area', width=230)
+			datasetimg7="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/7.png"
+			st.image(datasetimg7, caption= 'Word Cloud of non-commercial area', width=230)
+			datasetimg8="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/5.png"
+			st.image(datasetimg8, caption= 'Word Cloud of commercial area', width=230)
+			
+		with col3:
+			
+			datasetimg4="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/16.png"
+			st.image(datasetimg4, caption= '5 train dataset & 5 test dataset', width=230)
+			datasetimg9="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/10.png"
+			st.image(datasetimg9, caption= 'Preprocessing the dataset & Cleaning', width=230)
+			datasetimg10="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/17.png"
+			st.image(datasetimg10, caption= 'Total raw tweets using TWINT packages', width=230)
+	
 		#st.image(datasetimg1, caption= 'Dataset CSV', width=705)
 
 	if selected == 'QGIS':
@@ -230,6 +251,11 @@ def main():
 		)
 
 		# Start
+
+		QGISimg1="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/20.png"
+		st.image(QGISimg1, caption= 'In Selangor coordinates only', width=705)
+		QGISimg2="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/15.png"
+		st.image(QGISimg2, caption= 'Spatial Validation Split; Black is test dataset and Yellow is trained dataset', width=705)
 
 		QGISimg1=""
 		QGISimg2=""
@@ -258,6 +284,17 @@ def main():
 
 		# Start
 
+		Modelimg1="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/19.png"
+		st.image(Modelimg1, caption= 'Table of all modelling that have been done', width=705)
+		Modelimg2="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/18.png"
+		st.image(Modelimg2, caption= 'Modelling with vector space', width=705)
+		Modelimg3="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/11.png"
+		st.image(Modelimg3, caption= 'Best model : Logistic Regression with BoW', width=705)
+		Modelimg4="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/12.png"
+		st.image(Modelimg4, caption= 'Confusion Matrix of Logistic Regression with BoW', width=705)
+		Modelimg5="https://raw.githubusercontent.com/Litchirays/GEOSEL/main/ImagesFolder/14.png"
+		st.image(Modelimg5, caption= 'Accuracy score is 0.78 and F1 score is 0.75', width=705)
+
 		Modelimg1=""
 		Modelimg2=""
 		Modelimg3=""
@@ -282,6 +319,25 @@ def main():
 			background-size: cover;
          }}</style>""",unsafe_allow_html=True
 		)
+
+		st.subheader("Abstract")
+		st.text("Due to the rising use of social media over the past decade, there has been a")
+		st.text("notable increase in the production of user-generated text data. At the same ")
+		st.text("time, Twitter has developed into a crucial instrument for communication. ")
+		st.text("About 68 per cent of the world’s population is predicted to reside in cities")
+		st.text("by 2050. Social media is one of the new data sources that must be considered")
+		st.text("in order to comprehend the upcoming changes in urban architecture. This results")
+		st.text("in the virtual world’s data being retrieved, and text mining would then be")
+		st.text("implemented. In this study, classify building types into non-commercial and")
+		st.text("commercial using a geospatial text mining approach and a feature space analysis")
+		st.text("of geo-tagged Twitter text messages from the Selangor state. Widely used word")
+		st.text("embedding models including Word2Vec, and Doc2Vec, as well as more traditional")
+		st.text("models based on TF-IDF and Bag-of-words, were used to generate the feature space.")
+		st.text("However, establishing classification from purely social media content is rather ")
+		st.text("complex, as shown by the classification results generated by Logistic Regression, ")
+		st.text("Support Vector Machines, Random Forest, and XGBoost. Additionally, this work")
+		st.text("shows a baseline for combining text features with OpenStreetMap on QGIS to identify")
+		st.text("urban building types.")
 
 		# Start
 
